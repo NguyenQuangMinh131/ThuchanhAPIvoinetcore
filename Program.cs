@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Lấy chuỗi kết nối từ appsettings.json (hoặc dùng mặc định nếu null)
 var connectionString = builder.Configuration.GetConnectionString("StudentDBConnectionString")
-    ?? "Server=DESKTOP-CI4SVFI\\SQLEXPRESS;Database=StudentDB;Integrated Security=True;TrustServerCertificate=True;";
+    ?? "Server=DESKTOP-CI4SVFI\\SQLEXPRESS02;Database=StudentDB;Integrated Security=True;TrustServerCertificate=True;";
 
 // In ra chuỗi kết nối để debug
 Console.WriteLine($"🔗 Connection String: {connectionString}");

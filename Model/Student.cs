@@ -10,5 +10,6 @@ namespace ThuchanhAPIvoinetcore.Model
 
         [JsonProperty("class")]
         public string Class { get; set; }
+        public string Photo { get; set; } // thêm
     }
 }
